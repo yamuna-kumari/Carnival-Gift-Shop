@@ -1,0 +1,83 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>In the previous stage, you've implemented the operations the visitor can do with our program. Now, let's loop our program until visitors decide to quit. Add a new prompt to exit the program to the initial input:</p>
+<pre><code class="language-no-highlight">What do you want to do?
+
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts 5-Exit the shop</code></pre>
+<p>If the visitor enters the exit command, the program will end and show the previous ending message. Otherwise, the program will go back to our initial input and ask the visitors what to do again.</p>
+<p>Additionally, in the case of buying gifts, if everything goes well, remove the gift that the visitor bought from the list of gifts.</p>
+<p>Don't worry about the user not having enough tickets to buy a gift. You'll handle cases like this in the next stage.</p>
+<p>The starting tickets will be <code class="java">zero</code> this time. </p>
+<h5 id="objectives">Objectives</h5>
+<p>In this stage, your program should:</p>
+<ol>
+<li>Print the welcoming and greeting messages from the previous stage;</li>
+<li>Print the list of gifts;</li>
+<li>Handle initial input which the user chooses what to do;</li>
+<li>Handle the option to buy a gift and remove the gift from the list;</li>
+<li>Handle the option to add more tickets;</li>
+<li>Handle the option to see the total tickets;</li>
+<li>Handle the option to see the list of gifts;</li>
+<li>Handle a new option to quit the program;</li>
+<li>Run continuously;</li>
+<li>Terminate the program with the message.</li>
+</ol>
+<h5 id="examples">Examples</h5>
+<p>The greater-than symbol followed by a space (<code class="java">&gt; </code>) represents the user input. Note that it's not part of the input.</p>
+<p><strong>Example 1: </strong><em>where the program starts and runs continuously until the exit prompt</em></p>
+<pre><code class="language-no-highlight">WELCOME TO THE CARNIVAL GIFT SHOP!
+Hello friend! Thank you for visiting the carnival!
+Here's the list of gifts:
+
+1- Teddy Bear, Cost: 10 tickets
+2- Big Red Ball, Cost: 5 tickets
+3- Huge Bear, Cost: 50 tickets
+4- Candy, Cost: 8 tickets
+5- Stuffed Tiger, Cost: 15 tickets
+6- Stuffed Dragon, Cost: 30 tickets
+7- Skateboard, Cost: 100 tickets
+8- Toy Car, Cost: 25 tickets
+9- Basketball, Cost: 20 tickets
+10- Scary Mask, Cost: 75 tickets
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts 5-Exit the shop
+&gt; 2
+Enter the ticket amount: &gt; 100
+Total tickets: 100
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts 5-Exit the shop
+&gt; 1
+Enter the number of the gift you want to get: &gt; 10
+Here you go, one Scary Mask!
+Total tickets: 25
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts 5-Exit the shop
+&gt; 4
+Here's the list of gifts:
+
+1- Teddy Bear, Cost: 10 tickets
+2- Big Red Ball, Cost: 5 tickets
+3- Huge Bear, Cost: 50 tickets
+4- Candy, Cost: 8 tickets
+5- Stuffed Tiger, Cost: 15 tickets
+6- Stuffed Dragon, Cost: 30 tickets
+7- Skateboard, Cost: 100 tickets
+8- Toy Car, Cost: 25 tickets
+9- Basketball, Cost: 20 tickets
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts 5-Exit the shop
+&gt; 3
+Total tickets: 25
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts 5-Exit the shop
+&gt; 5
+Have a nice day!
+
+Process finished with exit code 0
+</code></pre>
+</div>

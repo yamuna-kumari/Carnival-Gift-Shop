@@ -1,0 +1,134 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>Now that you have the list of gifts with details, the visitors will decide what they want.</p>
+<p>To simplify getting input from the console, we're using a JS library; check out the <a href="https://github.com/hyperskill/sync-input#usage" rel="noopener noreferrer nofollow" target="_blank">documentation</a> to see how you can use it.</p>
+<p>First, let’s get this input from the visitor:</p>
+<pre><code class="language-no-highlight">What do you want to do?
+
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts</code></pre>
+<p>The visitor will enter the respective number to choose an option. Also, the visitor will have <code class="java">100</code><strong> </strong>tickets in the beginning.</p>
+<p>In the first option, we will ask for another input: <code class="java">Enter the number of the gift you want to get: </code></p>
+<p>The visitor will enter the id/order number of the gift, and we will output the name of the gift: <code class="java">Here you go, one %GIFT_NAME%!</code></p>
+<p>Then, we will subtract the ticket amount of the chosen gift from the visitor’s total tickets and show the total tickets: <code class="java">Total tickets: 90</code></p>
+<p>In the second option, the visitor will enter the number of tickets to add with this input: <code class="java">Enter the ticket amount: </code></p>
+<p>After that, we will show the total number of tickets again!</p>
+<p>In the third option, let's show the total tickets that the visitor has: <code class="java">Total tickets: 90</code></p>
+<p>And in the last option, show the list of gifts again like in the example!</p>
+<p>After any of these cases, output this message before ending the program: <code class="java">Have a nice day!</code></p>
+<h5 id="objectives">Objectives</h5>
+<p>In this stage, your program should:</p>
+<ol>
+<li>Print the welcoming and greeting messages from the previous stage;</li>
+<li>Print the list of gifts;</li>
+<li>Handle the initial input where the user chooses what to do;</li>
+<li>Handle the option to buy a gift;</li>
+<li>Handle the option to add more tickets;</li>
+<li>Handle the option to see the total tickets;</li>
+<li>Handle the option to see the list of gifts;</li>
+<li>Terminate the program with a new message.</li>
+</ol>
+<h5 id="examples">Examples</h5>
+<p>The greater-than symbol followed by a space (<code class="java">&gt; </code>) represents the user input. Note that it's not part of the input.</p>
+<p><strong>Example 1: </strong><em>where the program handles the initial input with the first option</em></p>
+<pre><code class="language-no-highlight">WELCOME TO THE CARNIVAL GIFT SHOP!
+Hello friend! Thank you for visiting the carnival!
+Here's the list of gifts:
+
+1- Teddy Bear, Cost: 10 tickets
+2- Big Red Ball, Cost: 5 tickets
+3- Huge Bear, Cost: 50 tickets
+4- Candy, Cost: 8 tickets
+5- Stuffed Tiger, Cost: 15 tickets
+6- Stuffed Dragon, Cost: 30 tickets
+7- Skateboard, Cost: 100 tickets
+8- Toy Car, Cost: 25 tickets
+9- Basketball, Cost: 20 tickets
+10- Scary Mask, Cost: 75 tickets
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts
+&gt; 1
+Enter the number of the gift you want to get: &gt; 1
+Here you go, one Teddy Bear!
+Total tickets: 90
+Have a nice day!
+</code></pre>
+<p> <strong>Example 2: </strong><em>where the program handles the initial input with the second option</em></p>
+<pre><code class="language-no-highlight">WELCOME TO THE CARNIVAL GIFT SHOP!
+Hello friend! Thank you for visiting the carnival!
+Here's the list of gifts:
+
+1- Teddy Bear, Cost: 10 tickets
+2- Big Red Ball, Cost: 5 tickets
+3- Huge Bear, Cost: 50 tickets
+4- Candy, Cost: 8 tickets
+5- Stuffed Tiger, Cost: 15 tickets
+6- Stuffed Dragon, Cost: 30 tickets
+7- Skateboard, Cost: 100 tickets
+8- Toy Car, Cost: 25 tickets
+9- Basketball, Cost: 20 tickets
+10- Scary Mask, Cost: 75 tickets
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts
+&gt; 2
+Enter the ticket amount: &gt; 100
+Total tickets: 200
+Have a nice day!
+</code></pre>
+<p> <strong>Example 3: </strong><em>where the program handles the initial input with the third option</em></p>
+<pre><code class="language-no-highlight">WELCOME TO THE CARNIVAL GIFT SHOP!
+Hello friend! Thank you for visiting the carnival!
+Here's the list of gifts:
+
+1- Teddy Bear, Cost: 10 tickets
+2- Big Red Ball, Cost: 5 tickets
+3- Huge Bear, Cost: 50 tickets
+4- Candy, Cost: 8 tickets
+5- Stuffed Tiger, Cost: 15 tickets
+6- Stuffed Dragon, Cost: 30 tickets
+7- Skateboard, Cost: 100 tickets
+8- Toy Car, Cost: 25 tickets
+9- Basketball, Cost: 20 tickets
+10- Scary Mask, Cost: 75 tickets
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts
+&gt; 3
+Total tickets: 100
+Have a nice day!
+</code></pre>
+<p> <strong>Example 4: </strong><em>where the program handles the initial input with the fourth option</em></p>
+<pre><code class="language-no-highlight">WELCOME TO THE CARNIVAL GIFT SHOP!
+Hello friend! Thank you for visiting the carnival!
+Here's the list of gifts:
+
+1- Teddy Bear, Cost: 10 tickets
+2- Big Red Ball, Cost: 5 tickets
+3- Huge Bear, Cost: 50 tickets
+4- Candy, Cost: 8 tickets
+5- Stuffed Tiger, Cost: 15 tickets
+6- Stuffed Dragon, Cost: 30 tickets
+7- Skateboard, Cost: 100 tickets
+8- Toy Car, Cost: 25 tickets
+9- Basketball, Cost: 20 tickets
+10- Scary Mask, Cost: 75 tickets
+
+What do you want to do?
+1-Buy a gift 2-Add tickets 3-Check tickets 4-Show gifts
+&gt; 4
+Here's the list of gifts:
+
+1- Teddy Bear, Cost: 10 tickets
+2- Big Red Ball, Cost: 5 tickets
+3- Huge Bear, Cost: 50 tickets
+4- Candy, Cost: 8 tickets
+5- Stuffed Tiger, Cost: 15 tickets
+6- Stuffed Dragon, Cost: 30 tickets
+7- Skateboard, Cost: 100 tickets
+8- Toy Car, Cost: 25 tickets
+9- Basketball, Cost: 20 tickets
+10- Scary Mask, Cost: 75 tickets
+Have a nice day!
+</code></pre>
+</div>
