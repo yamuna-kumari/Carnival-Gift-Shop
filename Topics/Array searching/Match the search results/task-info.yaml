@@ -1,0 +1,29 @@
+type: matching
+captions:
+- arr.includes(7);
+- arr.find(e =&gt; e / 2 === 4);
+- arr.findIndex(n =&gt; n % 5 === 0);
+- arr.indexOf(4);
+- arr.lastIndexOf(1);
+options:
+- "false"
+- 8
+- -1
+- 4
+- 1
+files:
+- name: main.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/18273#comment
+status: Solved
+record: -1
+ordering:
+- 0
+- 1
+- 2
+- 3
+- 4

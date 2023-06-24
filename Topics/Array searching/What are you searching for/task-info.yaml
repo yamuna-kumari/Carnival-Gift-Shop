@@ -1,0 +1,27 @@
+type: matching
+custom_name: What are you searching for?
+captions:
+- indexOf()
+- lastIndexOf()
+- includes()
+- find()
+options:
+- boolean value
+- the first index of the element
+- the value of the element
+- the last index of the element
+files:
+- name: main.js
+  visible: true
+  text: |+
+    // You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/18272#comment
+status: Solved
+record: -1
+ordering:
+- 0
+- 1
+- 2
+- 3

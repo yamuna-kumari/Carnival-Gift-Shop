@@ -1,0 +1,54 @@
+<h2>Array searching</h2>
+<div class="step-text">
+<p>Working with an array often requires checking whether it <strong>contains </strong>a particular element or not. Another task might be to get the <strong>index</strong> of an element's position in the array. These problems could be solved by iterating over array elements with a loop, but that is where <strong>array searching</strong> methods come in handy. In this topic, we will look at them in more detail.</p>
+<h5 id="the-includes-method" style="text-align: center;">The includes() method</h5>
+<p>Let's start with the <code class="language-javascript">includes()</code> method. It returns <code class="language-javascript">true</code> if an array includes a certain value, otherwise it returns <code class="language-javascript">false</code>. Take a look at this code example:</p>
+<pre><code class="language-javascript">const array = ["Try", "to", "find", "me", "!"];
+
+console.log(array.includes("find")); // true
+console.log(array.includes(5)); // false</code></pre>
+<p>The method also accepts an <strong>optional argument</strong> that specifies an index from which to start searching the array:</p>
+<pre><code class="language-javascript">console.log(array.includes("me", 2)); // true
+console.log(array.includes("me", 4)); // false</code></pre>
+<p>If the second argument is <strong>negative</strong>, then its value is added to the array length, and its sum is considered the index from which to start searching. If this sum is less than or equal to zero, then the whole array will be searched:</p>
+<pre><code class="language-javascript">console.log(array.includes("me", -10)); // true
+console.log(array.includes("me", -1)); // false</code></pre>
+<h5 id="the-find-method" style="text-align: center;">The find() method</h5>
+<p>Sometimes we need more flexibility when searching for an element, especially with objects. In this case, it is appropriate to use the <code class="language-javascript">find()</code> method, which returns the first element it finds in the array, that satisfies the provided <strong>callback function</strong>. If no element meets the condition, <code class="language-javascript">undefined</code> is returned.</p>
+<p> </p>
+<p></p><div class="alert alert-primary">The <strong>callback </strong>is a function to be executed for each element of the array. Its argument is the value of the current element. Also, there are two optional arguments: the index of the current element and the array itself.</div>
+<p> </p>
+<p>Consider the following example:</p>
+<pre><code class="language-javascript">const projects = [{name: "To-Do App", lang: "JS"}, {name: "Website", lang: "HTML"}];
+
+console.log(projects.find(e =&gt; e.lang === "JS")); // {name: "To-Do App", lang: "JS"}
+console.log(projects.find(e =&gt; e.lang === "CSS")); // undefined</code></pre>
+<h5 id="the-findindex-method" style="text-align: center;">The findIndex() method</h5>
+<p>The <code class="language-javascript">findIndex()</code> method is similar to the previous one: it also accepts a <strong>callback function</strong>, but instead it returns the <strong>index </strong>of the first element in the array that satisfies it. Otherwise, it returns -1. Let's look at the example with the same array:</p>
+<pre><code class="language-javascript">console.log(projects.findIndex(e =&gt; e.lang === "HTML")); // 1
+console.log(projects.findIndex(e =&gt; e.lang === "C")); // -1</code></pre>
+<h5 id="the-indexof-method" style="text-align: center;">The indexOf() method</h5>
+<p>The <code class="language-javascript">indexOf()</code> method returns the <strong>first </strong>index of an element that equals a certain <strong>value</strong>. If the element does not exist in the array, the method returns -1. The following code demonstrates how to use the method:</p>
+<pre><code class="language-javascript">const languages = ["HTML", "CSS", "JS", "Python", "JS"];
+
+console.log(languages.indexOf("JS")); // 2
+console.log(languages.indexOf("English")); // -1</code></pre>
+<p>As well as the <code class="language-javascript">includes()</code> method, <code class="language-javascript">indexOf()</code> accepts an <strong>optional argument</strong> that specifies the index from which to start searching the array:</p>
+<pre><code class="language-javascript">console.log(languages.indexOf("JS", 3)); // 4
+console.log(languages.indexOf("CSS", 2)); // -1</code></pre>
+<h5 id="the-lastindexof-method" style="text-align: center;">The lastIndexOf() method</h5>
+<p>There is a similar <code class="language-javascript">lastIndexOf()</code> method, that searches the array in the opposite direction. It returns the <strong>last</strong> index of an element, that matches a particular value, as shown below:</p>
+<pre><code class="language-javascript">console.log(languages.lastIndexOf("JS")); // 4
+console.log(languages.lastIndexOf("JS", 3)); // 2
+console.log(languages.lastIndexOf("JS", 1)); // -1</code></pre>
+<p>As you can see in the example above, this method also accepts the same optional argument and returns -1 if the element is not found.</p>
+<h5 id="conclusion" style="text-align: center;">Conclusion</h5>
+<p>To sum up, you have learned about various array searching methods in this topic:</p>
+<ul>
+<li><code class="language-javascript">includes()</code> checks if an array <strong>contains </strong>a certain element and returns a boolean value.</li>
+<li><code class="language-javascript">find()</code> returns the <strong>value </strong>of the first element it finds that satisfies a callback function, otherwise <code class="language-javascript">undefined</code> is returned.</li>
+<li><code class="language-javascript">findIndex()</code> is similar to the <code class="language-javascript">find()</code> method, but instead it returns the <strong>index </strong>of the element, or -1 if it doesn't exist.</li>
+<li><code class="language-javascript">indexOf()</code> returns the <strong>first index</strong> of the element it finds that matches a certain value, or -1 if it is not present.</li>
+<li><code class="language-javascript">lastIndexOf()</code> is similar to the <code class="language-javascript">indexOf()</code> method, but it searches the array backward and returns the <strong>last index</strong> of the element instead.</li>
+</ul>
+</div>
