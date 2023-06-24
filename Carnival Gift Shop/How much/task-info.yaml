@@ -45,7 +45,10 @@ files:
     if __name__ == '__main__':
         CarnivalGiftShopTest('main').run_tests()
   learner_created: false
-feedback_link: https://hyperskill.org/projects/277/stages/1404/implement#comment
+feedback_link: https://hyperskill.org/learn/step/21705#comment
 check_profile: hyperskill_node_javascript
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Sat, 24 Jun 2023 16:48:34 UTC"
 record: -1

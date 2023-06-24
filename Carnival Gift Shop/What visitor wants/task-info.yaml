@@ -202,7 +202,7 @@ files:
     if __name__ == '__main__':
         CarnivalGiftShopTest('main').run_tests()
   learner_created: false
-feedback_link: https://hyperskill.org/projects/277/stages/1405/implement#comment
+feedback_link: https://hyperskill.org/learn/step/21706#comment
 check_profile: hyperskill_node_javascript
 status: Unchecked
 record: -1

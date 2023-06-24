@@ -45,31 +45,7 @@ files:
     if __name__ == '__main__':
         CarnivalGiftShopTest('main').run_tests()
   learner_created: false
-feedback_link: https://hyperskill.org/projects/277/stages/1403/implement#comment
+feedback_link: https://hyperskill.org/learn/step/21704#comment
 check_profile: hyperskill_node_javascript
-status: Failed
-feedback:
-  message: |-
-    Wrong answer in test #1
-
-    Your output should be like in the example!
-
-    Please find below the output of your program during this failed test.
-
-    ---
-
-    WELCOME TO THE CARNIVAL GIFT SHOP!
-    Hello friend! Thank you for visiting the carnival!
-    Here's the list of gifts:
-    Teddy Bear
-    Big Red Ball
-    Huge Bear
-    Candy
-    Stuffed Tiger
-    Stuffed Dragon
-    Skateboard
-    Toy Car
-    Basketball
-    Scary Mask
-  time: "Thu, 22 Jun 2023 18:22:33 UTC"
-record: -1
+status: Solved
+record: 1
