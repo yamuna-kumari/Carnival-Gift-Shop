@@ -204,8 +204,8 @@ files:
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/21706#comment
 check_profile: hyperskill_node_javascript
-status: Solved
+status: Failed
 feedback:
-  message: <html>Correct solution</html>
-  time: "Sat, 24 Jun 2023 18:54:41 UTC"
+  message: Internal check system error
+  time: "Sat, 24 Jun 2023 19:02:05 UTC"
 record: -1
